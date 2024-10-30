@@ -1,0 +1,72 @@
+<mjml>
+  <mj-head>
+    <mj-title>Missing Parts Request Received</mj-title>
+    <mj-include path="partials/head.mjml" />
+  </mj-head>
+  <mj-body css-class="body" background-color="#f0f0f0">
+    <!-- Header -->
+    <mj-include path="partials/header.mjml" />
+
+    <!-- Main Content -->
+    <mj-wrapper css-class="content-bg" padding="35px 20px">
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text css-class="text-content" padding-bottom="30px">
+            Hi {{firstName}},<br /><br />
+
+            We've received your report about missing parts from your order. A
+            member of our team will review your request and respond shortly
+            through your support ticket.<br /><br />
+
+            You can view updates and provide any additional information about
+            the missing parts through your
+            <a href="{{ticketUrl}}">support ticket #{{ticketNumber}}</a>. We'll
+            also notify you by email when there are updates.
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="8px">
+            <strong>Items with missing parts:</strong>
+          </mj-text>
+          <mj-table
+            css-class="table-content"
+            font-size="16px"
+            padding-top="0px"
+            padding-bottom="20px"
+          >
+            <tr style="border-top: 1px dashed #ccc">
+              <td style="width: 60px; padding: 10px 0" width="60" height="60">
+                <img
+                  src="https://placebear.com/50/50"
+                  width="50"
+                  height="50"
+                  style="width: 50px; height: 50px; display: block"
+                />
+              </td>
+              <td style="padding: 10px 0">
+                {{productName}}<br />
+                <div
+                  style="font-size: 14px; line-height: 20px; padding-top: 7px"
+                >
+                  Order #{{orderNumber}}
+                </div>
+              </td>
+            </tr>
+          </mj-table>
+
+          <mj-button href="{{ticketUrl}}" padding-bottom="40px" align="left">
+            View Support Ticket
+          </mj-button>
+
+          <mj-text css-class="text-content" font-size="14px" line-height="20px">
+            Our team is committed to resolving this issue as quickly as
+            possible. You'll receive a response through your support ticket
+            soon.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-include path="partials/footer.mjml" />
+  </mj-body>
+</mjml>

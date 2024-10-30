@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mammoth Email Templates</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      .sidebar {
+        width: 250px;
+        background: #f0f0f0;
+        padding: 0 10px;
+        border-right: 1px solid #ddd;
+        overflow-y: auto;
+      }
+
+      .sidebar h4 {
+        padding: 10px 10px 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .sidebar a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #111;
+        border-radius: 4px;
+        font-size: 15px;
+        transition: all 0.2s ease;
+      }
+
+      .sidebar a:hover {
+        background: #e0e0e0;
+      }
+
+      .sidebar a.active {
+        background: #333;
+        color: white;
+      }
+
+      .main-content {
+        flex-grow: 1;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h4>Email Templates</h4>
+      <a
+        href="build/account-reset-pass.html"
+        target="content-frame"
+        class="active"
+        >Account: Reset Password</a
+      >
+      <a href="build/account-update.html" target="content-frame"
+        >Account: Updated</a
+      >
+      <a href="build/cancel-request.html" target="content-frame"
+        >Order: Cancel Request</a
+      >
+      <a href="build/cancel-deny.html" target="content-frame"
+        >Order: Cancel Fail</a
+      >
+      <a href="build/cancel-success.html" target="content-frame"
+        >Order: Cancel Success</a
+      >
+      <a href="build/order-confirm.html" target="content-frame"
+        >Order: Confirmation</a
+      >
+      <a href="build/order-delivered.html" target="content-frame"
+        >Order: Delivered</a
+      >
+      <a href="build/order-shipped.html" target="content-frame"
+        >Order: Shipped</a
+      >
+      <a href="build/return-request-pending.html" target="content-frame"
+        >Return Request: Pending</a
+      >
+      <a href="build/return-request-deny.html" target="content-frame"
+        >Return Request: Denied</a
+      >
+      <a href="build/return-request-cancelled.html" target="content-frame"
+        >Return Request: Cancelled</a
+      >
+      <a href="build/return-missing-parts.html" target="content-frame"
+        >Return: Missing Parts</a
+      >
+      <a href="build/return-biz-ship.html" target="content-frame"
+        >Return: Prepaid Label</a
+      >
+      <a href="build/return-customer-ship.html" target="content-frame"
+        >Return: Customer Pays Ship</a
+      >
+      <a href="build/return-cancelled.html" target="content-frame"
+        >Return: Cancelled</a
+      >
+      <a href="build/return-complete-refund.html" target="content-frame"
+        >Return: Complete (Refund)</a
+      >
+      <a href="build/return-complete-swap.html" target="content-frame"
+        >Return: Complete (Swap)</a
+      >
+    </div>
+    <div class="main-content">
+      <iframe name="content-frame" src="build/account-reset-pass.html"></iframe>
+    </div>
+
+    <script>
+      const links = document.querySelectorAll(".sidebar a");
+
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          links.forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      window.addEventListener("load", function () {
+        const currentPath = window.location.pathname;
+        links.forEach((link) => {
+          if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

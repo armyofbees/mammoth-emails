@@ -1,0 +1,56 @@
+<mjml>
+  <mj-head>
+    <mj-title>Finish resetting your password</mj-title>
+    <mj-include path="./partials/head.mjml" />
+  </mj-head>
+  <mj-body css-class="body" background-color="#f0f0f0">
+    <!-- Header -->
+    <mj-include path="./partials/header.mjml" />
+
+    <!-- Main Content -->
+    <mj-wrapper css-class="content-bg" padding="35px 20px">
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text
+            css-class="text-content"
+            font-size="24px"
+            font-weight="700"
+            padding-bottom="20px"
+          >
+            Reset Your Mammoth Password
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="30px">
+            Hi {{firstName}},<br /><br />
+            We received a request to reset the password for your Mammoth
+            account. To set up a new password, just click the button below.<br /><br />
+            If you didn't request this change, you can safely ignore this email
+            and your password will remain the same.
+          </mj-text>
+
+          <mj-button
+            href="{{reset_password_link}}"
+            padding-bottom="40px"
+            align="left"
+          >
+            Reset Password
+          </mj-button>
+
+          <mj-text css-class="text-content" font-size="14px" line-height="20px">
+            For your security, this password reset link will expire in 24 hours.
+            If you need a new link after that time, you can always request
+            another password reset at
+            <a href="https://mammothvehicles.com">mammothvehicles.com</a
+            >.<br /><br />
+            Questions? Our
+            <a href="https://mammothvehicles.com/contact">support team</a>
+            is here to help.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-include path="./partials/footer.mjml" />
+  </mj-body>
+</mjml>

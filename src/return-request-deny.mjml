@@ -1,0 +1,70 @@
+<mjml>
+ <mj-head>
+   <mj-title>Return request updated</mj-title>
+   <mj-include path="partials/head.mjml" />
+ </mj-head>
+ <mj-body css-class="body" background-color="#f0f0f0">
+   <!-- Header -->
+   <mj-include path="partials/header.mjml" />
+
+   <!-- Main Content -->
+   <mj-wrapper css-class="content-bg" padding="35px 20px">
+     <mj-section padding="0">
+       <mj-column>
+         <mj-text css-class="text-content" padding-bottom="30px">
+           Hi {{firstName}},<br><br>
+
+           We've reviewed your return request for order #{{orderNumber}}, and unfortunately we are unable to approve it at this time.<br><br>
+
+           {{#if adminMessage}}<strong>Reason for denial:</strong><br>{{adminMessage}}<br><br>{{/if}}
+
+           If you have any questions about this decision or would like to provide additional information, you can respond directly through your <a href="{{ticketUrl}}">support ticket #{{ticketNumber}}</a>.
+         </mj-text>
+
+         <mj-text
+           css-class="text-content"
+           font-size="20px"
+           font-weight="700"
+           padding-bottom="20px"
+         >
+          Request Details
+         </mj-text>
+
+         <mj-text css-class="text-content" padding-bottom="8px">
+           <strong>Items requested for return:</strong><br>
+           <a href="{{orderStatusUrl}}"></a>
+         </mj-text>
+         <mj-table css-class="table-content" font-size="16px" padding-top="0px" padding-bottom="20px">
+           <tr style="border-top:1px dashed #ccc">
+             <td style="width:60px;padding:10px 0;" width="60" height="60"><img src="https://placebear.com/50/50" width="50" height="50" style="width:50px;height:50px;display:block;" /></td>
+             <td style="padding:10px 0;">{{productName}}<br /><div style="font-size:14px;line-height:20px;padding-top:7px">Qty: {{productQty}}</td>
+           </tr>
+           <tr style="border-top:1px dashed #ccc">
+             <td style="width:60px;padding:10px 0;" width="60" height="60"><img src="https://placebear.com/50/50" width="50" height="50" style="width:50px;height:50px;display:block;" /></td>
+             <td>{{productName}}<br /><div style="font-size:14px;line-height:20px;padding-top:7px">Qty: {{productQty}}</td>
+           </tr>
+         </mj-table>
+
+         <mj-text css-class="text-content" padding-bottom="30px">
+           <strong>Original return reason:</strong><br />{{returnReason}}
+         </mj-text>
+
+         <mj-button
+           href="{{ticketUrl}}"
+           padding-bottom="40px"
+           align="left"
+         >
+           View Support Ticket
+         </mj-button>
+
+         <mj-text css-class="text-content" font-size="14px" line-height="20px">
+           Our support team is available if you need clarification or have additional questions about this decision.
+         </mj-text>
+       </mj-column>
+     </mj-section>
+   </mj-wrapper>
+
+   <!-- Footer -->
+   <mj-include path="partials/footer.mjml" />
+ </mj-body>
+</mjml>

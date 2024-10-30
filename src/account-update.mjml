@@ -1,0 +1,65 @@
+<mjml>
+  <mj-head>
+    <mj-title>Security Alert: Your account has been updated</mj-title>
+    <mj-include path="partials/head.mjml" />
+  </mj-head>
+  <mj-body css-class="body" background-color="#f0f0f0">
+    <!-- Header -->
+    <mj-include path="partials/header.mjml" />
+
+    <!-- Main Content -->
+    <mj-wrapper css-class="content-bg" padding="35px 20px">
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text
+            css-class="text-content"
+            font-size="24px"
+            font-weight="700"
+            padding-bottom="20px"
+          >
+            Your Mammoth Account Was Updated
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="20px">
+            Hi {{firstName}},<br /><br />
+            We noticed that the login settings for your Mammoth account were
+            updated, and {{#if type == "password"}}your password was
+            changed{{else}}a social login method was added or changed{{/if}} on
+            {{timestamp}}.<br /><br />
+            If you made this change, you can ignore this email - everything is
+            working as it should.
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="30px">
+            If you <strong>did not</strong> make this change, please take these
+            steps immediately:<br /><br />
+            1. Reset your password using the link below<br />
+            2. Review your account for any unusual activity<br />
+            3.
+            <a href="https://mammothvehicles.com/contact"
+              >Contact our support team</a
+            >
+          </mj-text>
+
+          <mj-button
+            href="{{password_reset_link}}"
+            padding-bottom="40px"
+            align="left"
+          >
+            Reset Password
+          </mj-button>
+
+          <mj-text css-class="text-content" font-size="14px" line-height="20px">
+            Questions? Our
+            <a href="https://mammothvehicles.com/contact">support team</a>
+            is here to help if you need assistance or notice anything
+            suspicious.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-include path="partials/footer.mjml" />
+  </mj-body>
+</mjml>

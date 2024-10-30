@@ -1,0 +1,24 @@
+<!-- Logo Section -->
+<mj-section padding="20px 0 30px">
+  <mj-column>
+    <!-- Light Mode Logo -->
+    <mj-raw><a href="https://mammothvehicles.com"></mj-raw>
+    <mj-image
+      css-class="light-mode-image"
+      src="https://mammothvehicles.com/images/email-logo-light.png"
+      alt="Company Logo"
+      width="150px"
+      padding="0"
+    />
+    <mj-raw><!--[if !mso]><!--></mj-raw>
+    <mj-image
+      css-class="dark-mode-image"
+      src="https://mammothvehicles.com/images/email-logo-dark.png"
+      alt="Company Logo"
+      width="150px"
+      padding="0"
+    />
+    <mj-raw><!--<![endif]--></mj-raw>
+    <mj-raw></a></mj-raw>
+  </mj-column>
+</mj-section>

@@ -1,0 +1,45 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email Template</mj-title>
+    <mj-include path="partials/head.mjml" />
+  </mj-head>
+  <mj-body css-class="body" background-color="#f0f0f0">
+    <!-- Header -->
+    <mj-include path="partials/header.mjml" />
+
+    <!-- Main Content -->
+    <mj-wrapper css-class="content-bg" padding="35px 20px">
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text
+            css-class="text-content"
+            font-size="24px"
+            font-weight="700"
+            padding-bottom="20px"
+          >
+            Email Template
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="30px">
+            Paragraph text.
+          </mj-text>
+
+          <mj-button
+            href="{{reset_password_link}}"
+            padding-bottom="40px"
+            align="left"
+          >
+            Button Link
+          </mj-button>
+
+          <mj-text css-class="text-content" font-size="14px" line-height="20px">
+            Fine print.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-include path="partials/footer.mjml" />
+  </mj-body>
+</mjml>

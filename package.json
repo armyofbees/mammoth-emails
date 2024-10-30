@@ -1,0 +1,19 @@
+{
+  "name": "mammoth-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx mjml --watch \"src/*.mjml\" --output \"build/\"",
+    "build": "npx mjml \"src/*.mjml\" --output \"build/\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "^4.0.1",
+    "mjml": "^4.14.1",
+    "mjml-cli": "^4.14.1",
+    "prettier": "^3.1.0"
+  }
+}

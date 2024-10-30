@@ -1,0 +1,88 @@
+<mjml>
+  <mj-head>
+    <mj-title>Return request cancelled</mj-title>
+    <mj-include path="partials/head.mjml" />
+  </mj-head>
+  <mj-body css-class="body" background-color="#f0f0f0">
+    <!-- Header -->
+    <mj-include path="partials/header.mjml" />
+
+    <!-- Main Content -->
+    <mj-wrapper css-class="content-bg" padding="35px 20px">
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text css-class="text-content" padding-bottom="30px">
+            Hi {{firstName}},<br /><br />
+
+            Per your request, we've cancelled your return request for order
+            #{{orderNumber}}. No further action is needed.
+          </mj-text>
+
+          <mj-text
+            css-class="text-content"
+            font-size="20px"
+            font-weight="700"
+            padding-bottom="20px"
+          >
+            Cancelled Return Details
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="20px">
+            <strong>Order #:</strong><br />
+            {{orderNumber}}
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="8px">
+            <strong>Items from cancelled return:</strong>
+          </mj-text>
+          <mj-table
+            css-class="table-content"
+            font-size="16px"
+            padding-top="0px"
+            padding-bottom="20px"
+          >
+            <tr style="border-top: 1px dashed #ccc">
+              <td style="width: 60px; padding: 10px 0" width="60" height="60">
+                <img
+                  src="https://placebear.com/50/50"
+                  width="50"
+                  height="50"
+                  style="width: 50px; height: 50px; display: block"
+                />
+              </td>
+              <td style="padding: 10px 0">
+                {{productName}}<br />
+                <div
+                  style="font-size: 14px; line-height: 20px; padding-top: 7px"
+                >
+                  Qty: {{productQty}}
+                </div>
+              </td>
+            </tr>
+          </mj-table>
+
+          <mj-button
+            href="{{orderStatusUrl}}"
+            padding-bottom="20px"
+            align="left"
+          >
+            View Order Details
+          </mj-button>
+
+          <mj-text
+            css-class="text-content"
+            font-size="14px"
+            line-height="20px"
+            padding-top="30px"
+          >
+            If you need to request a return in the future, you can do so through
+            your order details page.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-include path="partials/footer.mjml" />
+  </mj-body>
+</mjml>

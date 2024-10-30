@@ -1,0 +1,36 @@
+<!-- Footer -->
+<mj-section padding="40px 20px">
+  <mj-column>
+    <mj-text
+      css-class="footer-text"
+      font-size="14px"
+      line-height="20px"
+      align="center"
+    >
+      <a href="{{unsubscribe_link}}" class="footer-link">Email Preferences</a>
+      &nbsp;&bull;&nbsp;
+      <a href="https://mammothvehicles.com/contact" class="footer-link"
+        >Contact Us</a
+      >
+      &nbsp;&bull;&nbsp;
+      <a href="https://mammothvehicles.com/privacy" class="footer-link"
+        >Privacy Policy</a
+      >
+      &nbsp;&bull;&nbsp;
+      <a href="https://mammothvehicles.com/terms" class="footer-link"
+        >Terms of Service</a
+      >
+    </mj-text>
+
+    <mj-text
+      css-class="footer-text"
+      font-size="14px"
+      line-height="20px"
+      align="center"
+      padding-top="40px"
+    >
+      Custom Truck Equipment, Inc.<br />4500 North Cliff Avenue<br />Sioux
+      Falls, SD 57104
+    </mj-text>
+  </mj-column>
+</mj-section>
