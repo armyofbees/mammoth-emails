@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-title>Email Template</mj-title>
+    <mj-title>Email Template!</mj-title>
     <mj-include path="partials/head.mjml" />
   </mj-head>
   <mj-body css-class="body" background-color="#f0f0f0">

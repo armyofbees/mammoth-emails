@@ -17,15 +17,15 @@
             font-weight="700"
             padding-bottom="20px"
           >
-            Your Mammoth Account Was Updated
+            Your Account Was Updated
           </mj-text>
 
           <mj-text css-class="text-content" padding-bottom="20px">
             Hi {{firstName}},<br /><br />
-            We noticed that the login settings for your Mammoth account were
-            updated, and {{#if type == "password"}}your password was
-            changed{{else}}a social login method was added or changed{{/if}} on
-            {{timestamp}}.<br /><br />
+            We noticed that the login settings for your Custom Truck Equipment
+            account were updated, and {{#if type == "password"}}your password
+            was changed{{else}}a social login method was added or changed{{/if}}
+            on {{timestamp}}.<br /><br />
             If you made this change, you can ignore this email - everything is
             working as it should.
           </mj-text>
@@ -36,7 +36,7 @@
             1. Reset your password using the link below<br />
             2. Review your account for any unusual activity<br />
             3.
-            <a href="https://mammothvehicles.com/contact"
+            <a href="https://ctetruckparts.com/contact"
               >Contact our support team</a
             >
           </mj-text>
@@ -51,7 +51,7 @@
 
           <mj-text css-class="text-content" font-size="14px" line-height="20px">
             Questions? Our
-            <a href="https://mammothvehicles.com/contact">support team</a>
+            <a href="https://ctetruckparts.com/contact">support team</a>
             is here to help if you need assistance or notice anything
             suspicious.
           </mj-text>

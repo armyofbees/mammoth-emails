@@ -83,6 +83,6 @@
     </mj-wrapper>
 
     <!-- Footer -->
-    <mj-include path="partials/footer.mjml" />
+    <mj-include path="partials/footer-return.mjml" />
   </mj-body>
 </mjml>

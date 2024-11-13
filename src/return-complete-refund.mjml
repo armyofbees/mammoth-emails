@@ -20,7 +20,10 @@
             A refund of ${{refundAmount}} has been issued to your original
             payment method ({{paymentMethod}} ****{{lastFour}}). Please note
             that it may take 3-5 business days for the refund to appear in your
-            account, depending on your bank or card issuer.
+            account, depending on your form of payment.<br /><br />
+
+            If there are any issues refunding to the original payment option,
+            the process may take longer (please allow up to 2-3 weeks).
           </mj-text>
 
           <mj-text
@@ -89,6 +92,6 @@
     </mj-wrapper>
 
     <!-- Footer -->
-    <mj-include path="partials/footer.mjml" />
+    <mj-include path="partials/footer-return.mjml" />
   </mj-body>
 </mjml>

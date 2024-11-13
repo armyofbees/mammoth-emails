@@ -2,7 +2,7 @@
 <mj-section padding="20px 0 30px">
   <mj-column>
     <!-- Light Mode Logo -->
-    <mj-raw><a href="https://mammothvehicles.com"></mj-raw>
+    <mj-raw><a href="https://ctetruckparts.com"></mj-raw>
     <mj-image
       css-class="light-mode-image"
       src="https://mammothvehicles.com/images/email-logo-light.png"

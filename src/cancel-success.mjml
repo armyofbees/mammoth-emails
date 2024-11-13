@@ -14,7 +14,7 @@
           <mj-text css-class="text-content" padding-bottom="30px">
             Hi {{firstName}},<br><br>
 
-            Your order #{{orderNumber}} has been successfully cancelled. Your payment will be refunded to your original payment method within 3-5 business days.<br /><br />If you still need the items you ordered, you can place a new order anytime at <a href="https://mammothvehicles.com">mammothvehicles.com</a>.
+            Your order #{{orderNumber}} has been successfully cancelled. Your payment will be refunded to your original payment method within 3-5 business days. If there are any issues refunding to the original payment option, this process may take longer (please allow up to 2-3 weeks).<br /><br />If you still need the items you ordered, you can place a new order anytime at <a href="https://ctetruckparts.com">ctetruckparts.com</a>.
           </mj-text>
 
           <mj-text
@@ -55,7 +55,7 @@
 
           <mj-text css-class="text-content" font-size="14px" line-height="20px">
             Questions? Our
-            <a href="https://mammothvehicles.com/contact"
+            <a href="https://ctetruckparts.com/contact"
               >customer support team</a
             >
             is here to help.

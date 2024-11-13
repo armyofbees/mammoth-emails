@@ -19,9 +19,9 @@
             originally planned.<br /><br />
 
             {{#if adminMessage}}<strong>Message from our team:</strong
-            ><br />{{adminMessage}}<br /><br />{{/if}} Once your order arrives,
-            you can initiate a return through your order details page if you no
-            longer want the items.
+            ><br />{{adminMessage}}<br /><br />{{/if}} If the order is shipped
+            to you and you do not want it, we advise you to either refuse the
+            shipment or initiate a return.
           </mj-text>
 
           <mj-button
@@ -34,7 +34,7 @@
 
           <mj-text css-class="text-content" font-size="14px" line-height="20px">
             Questions? Our
-            <a href="https://mammothvehicles.com/contact"
+            <a href="https://ctetruckparts.com/contact"
               >customer support team</a
             >
             is here to help.

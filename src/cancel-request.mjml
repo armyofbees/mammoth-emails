@@ -14,7 +14,7 @@
           <mj-text css-class="text-content" padding-bottom="30px">
             Hi {{firstName}},<br><br>
 
-            We've received your request to cancel order #{{orderNumber}}. We'll try our best to cancel it, but please note that once an order begins processing, we may not be able to stop it.<br /><br />We'll let you know the status of your cancellation request within the next 24-48 hours. If we're unable to cancel your order, we'll email you shipping confirmation as normal. Once delivered, you can initiate a return from your order details page.
+            We've received your request to cancel order #{{orderNumber}}. We'll try our best to cancel it, but please note that once an order begins processing, we may not be able to stop it.<br /><br />We'll let you know the status of your cancellation request within the next 1-2 business days. If we're unable to cancel your order, we'll email you shipping confirmation as normal. If the order is shipped to you and you do not want it, we advise you to either refuse the shipment or initiate a return.
           </mj-text>
 
           <mj-text
@@ -55,7 +55,7 @@
 
           <mj-text css-class="text-content" font-size="14px" line-height="20px">
             Questions? Our
-            <a href="https://mammothvehicles.com/contact"
+            <a href="https://ctetruckparts.com/contact"
               >customer support team</a
             >
             is here to help.

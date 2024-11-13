@@ -14,12 +14,14 @@
           <mj-text css-class="text-content" padding-bottom="30px">
             Hi {{firstName}},<br /><br />
 
-            Per your request, we've cancelled the return for order
-            #{{orderNumber}}. You can keep the items, and no further action is
-            needed.<br /><br />
+            {{#if customerInitiated}}Per your request, w{{#else}W{/if}e've
+            cancelled the return for order #{{orderNumber}}. You can keep the
+            items, and no further action is needed.<br /><br />
 
-            {{#if hasShippingLabel}} If you received a return shipping label,
-            please discard it as it has been deactivated. {{/if}}
+            {{#if adminMessage}}<strong>Reason for cancellation:</strong
+            ><br />{{adminMessage}}<br /><br />{{/if}} {{#if hasShippingLabel}}
+            If you received a return shipping label, please discard it as it has
+            been deactivated. {{/if}}
           </mj-text>
 
           <mj-text
@@ -87,6 +89,6 @@
     </mj-wrapper>
 
     <!-- Footer -->
-    <mj-include path="partials/footer.mjml" />
+    <mj-include path="partials/footer-return.mjml" />
   </mj-body>
 </mjml>

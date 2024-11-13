@@ -14,7 +14,9 @@
           <mj-text css-class="text-content" padding-bottom="30px">
             Hi {{firstName}},<br><br>
 
-            We've received your return request for order #{{orderNumber}}. Our team will review your request and get back to you within 24-48 hours.<br><br>
+            We've received your return request for order #{{orderNumber}}. Our team will review your request and get back to you within 3-5 business days.<br><br>
+
+            Returns must be started within 30 days of receipt of the item. Products and all associated packaging must be returned in new, resalable condition.<br><br>
 
             We've created support ticket #{{ticketNumber}} to track your return. You can view updates and add any additional information about your return at any time by visiting your <a href="{{ticketUrl}}">support ticket</a>.
           </mj-text>
@@ -63,6 +65,6 @@
     </mj-wrapper>
 
     <!-- Footer -->
-    <mj-include path="partials/footer.mjml" />
+    <mj-include path="partials/footer-return.mjml" />
   </mj-body>
 </mjml>
