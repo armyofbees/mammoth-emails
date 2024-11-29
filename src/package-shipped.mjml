@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-title>Your order has been delivered</mj-title>
+    <mj-title>{#if multiplePackages}A package from y{:else}Y{/if}our order has shipped</mj-title>
     <mj-include path="partials/head.mjml" />
   </mj-head>
   <mj-body css-class="body" background-color="#f0f0f0">
@@ -13,7 +13,7 @@
         <mj-column>
           <mj-text css-class="text-content" padding-bottom="30px">
             Hi {{firstName}},<br /><br />
-            Your package has been delivered! Thanks for shopping with Custom Truck Equipment.
+            {#if multiplePackages}A package from y{:else}Y{/if}our Custom Truck Equipment order has been shipped.
           </mj-text>
 
           <mj-text
@@ -22,18 +22,18 @@
             font-weight="700"
             padding-bottom="20px"
           >
-            Order #{{orderNumber}}
+            Order #{{orderNumber}} {#if multiplePackages}<div style="font-size:16px;line-height:24px;font-weight:normal;">Package {packageNum} of {packageTotal}</div>{/if}
           </mj-text>
 
           <mj-text css-class="text-content" padding-bottom="20px">
-            <strong>Delivered at:</strong><br>
-            {{deliveryDateTime}}
-          </mj-text>
-
-          <mj-text css-class="text-content" padding-bottom="20px">
-            <strong>Delivered to:</strong><br>
+            <strong>Shipping to:</strong><br>
             {{firstName}}<br>
             {{city}}, {{state}}
+          </mj-text>
+
+          <mj-text css-class="text-content" padding-bottom="20px">
+            <strong>Estimated arrival:</strong><br>
+            {{estimatedDeliveryDate}}
           </mj-text>
 
           <mj-text css-class="text-content" padding-bottom="8px">
@@ -55,18 +55,8 @@
             href="{{trackingUrl}}"
             align="left"
           >
-            View Order Details
+            Track Your Package
           </mj-button>
-
-          <mj-text css-class="text-content" font-size="14px" line-height="20px" padding-top="30px">
-            If you're not happy with your order for any reason, you can initiate a return from your order details page.<br /><br />
-            Questions? Our
-            <a href="https://ctetruckparts.com/contact"
-              >support team</a
-            >
-            is here to help.
-          </mj-text>
-
         </mj-column>
       </mj-section>
     </mj-wrapper>

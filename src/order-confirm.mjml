@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-title>Your order has shipped</mj-title>
+    <mj-title>Your Custom Truck Equipment order</mj-title>
     <mj-include path="partials/head.mjml" />
   </mj-head>
   <mj-body css-class="body" background-color="#f0f0f0">
@@ -14,7 +14,7 @@
           <mj-text css-class="text-content" padding-bottom="30px">
             Hi {{firstName}},<br /><br />
             Thank you for shopping with Custom Truck Equipment. We'll send a confirmation when your
-            item ships.
+            order ships.
           </mj-text>
 
           <mj-text
@@ -41,12 +41,11 @@
             <strong>Order total:</strong><br />${{total}}
           </mj-text>
 
-          <mj-button href="{{orderStatusUrl}}" align="left">
-            View or Manage Order
-          </mj-button>
-
-          <!-- Items -->
-          <mj-table css-class="table-content" font-size="16px" padding-top="40px" padding-bottom="0px">
+          <mj-text css-class="text-content" padding-bottom="8px">
+            <strong>Order contents:</strong><br>
+            <a href="{{orderStatusUrl}}"></a>
+          </mj-text>
+          <mj-table css-class="table-content" font-size="16px" padding-top="0px" padding-bottom="20px">
             <tr style="border-top:1px dashed #ccc">
               <td style="width:60px;padding:10px 0;" width="60" height="60"><img src="https://placebear.com/50/50" width="50" height="50" style="width:50px;height:50px;display:block;" /></td>
               <td style="padding:10px 0;">{{productName}}<br /><div style="font-size:14px;line-height:20px;padding-top:7px">Qty: {{productQty}}</td>
@@ -56,6 +55,10 @@
               <td>{{productName}}<br /><div style="font-size:14px;line-height:20px;padding-top:7px">Qty: {{productQty}}</td>
             </tr>
           </mj-table>
+
+          <mj-button href="{{orderStatusUrl}}" align="left">
+            View or Manage Order
+          </mj-button>
         </mj-column>
       </mj-section>
     </mj-wrapper>
